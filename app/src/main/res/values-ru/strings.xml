@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Car Dealer</string>
+    <string name="productionYear">Год выпуска</string>
+    <string name="mainLabel">Основное</string>
+    <string name="mileage">Пробег</string>
+    <string name="color">Цвет</string>
+    <string name="body">Кузов</string>
+    <string name="owners">Владельцы</string>
+    <string name="mechanical">Мехaника</string>
+    <string name="transmission">Коробка</string>
+    <string name="engine">Двигатель</string>
+    <string name="drive">Привод</string>
+    <string name="steeringWheel">Руль</string>
+    <string name="documents">Документы</string>
+    <string name="passport">ПТС</string>
+    <string name="ownershipTime">Владение</string>
+    <string name="customs">Таможня</string>
+    <string name="vehicleNumber">Госномер</string>
+    <string name="description">Описание</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="add_car">Добавить машну</string>
+    <string name="dialog_text">Пожалуйста выберите источик фото</string>
+    <string name="camera">Камера</string>
+    <string name="gallery">Галерея</string>
+    <string name="phone_number">Телефон</string>
+    <string name="name">Имя</string>
+    <string name="delete_snackbar">автомобиль %1$s удален</string>
+    <string name="add_toolbar">Добавить автомобиль</string>
+</resources>

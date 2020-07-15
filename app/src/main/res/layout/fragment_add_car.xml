@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_add_Car"
+                style="@style/Toolbar"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/add_photo_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="16dp"
+                    android:background="#29434E"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_photo_foreground" />
+
+                <TextView
+                    android:id="@+id/mainLabel"
+                    style="@style/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mainLabel" />
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/name_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/phone_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/year_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/productionYear"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/mileage_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/mileage"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/color_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/color" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/body_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/body" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/owners_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/owners"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/mechanicalLabel"
+                    style="@style/header"
+                    android:text="@string/mechanical" />
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/transmission_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/transmission" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/engine_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/engine" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/drive_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/drive" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/steering_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/steeringWheel" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/documentsLabel"
+                    style="@style/header"
+                    android:text="@string/documents" />
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/passport_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/passport" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/ownership_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/ownershipTime" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Switch
+                    android:id="@+id/custom_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/customs"
+                    android:textColor="#a5a5a5"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/number_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/vehicleNumber" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/vin_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/vin" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout style="@style/textInputLayoutSettings">
+
+                    <EditText
+                        android:id="@+id/description_edit"
+                        style="@style/inputTextStyle"
+                        android:hint="@string/description" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/add_car_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/add_car"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

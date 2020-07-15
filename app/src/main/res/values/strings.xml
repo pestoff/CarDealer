@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Car Dealer</string>
+    <string name="productionYear">Year</string>
+    <string name="mainLabel">Main</string>
+    <string name="mileage">Mileage</string>
+    <string name="color">Color</string>
+    <string name="body">Body</string>
+    <string name="owners">Owners</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="transmission">Transmission</string>
+    <string name="engine">Engine</string>
+    <string name="drive">Drive</string>
+    <string name="steeringWheel">Steering Wheel</string>
+    <string name="documents">Documents</string>
+    <string name="passport">Passport</string>
+    <string name="ownershipTime">Ownership Time</string>
+    <string name="customs">Customs</string>
+    <string name="vehicleNumber">Vehicle Number</string>
+    <string name="description">Description</string>
+    <string name="vin" translatable="false">Vin</string>
+    <string name="add_photo">Add the photo</string>
+    <string name="add_car">Add the car</string>
+    <string name="dialog_text">Please choose photo source</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="phone_number">Phone number</string>
+    <string name="name">Name</string>
+    <string name="delete_snackbar">%1$s was deleted</string>
+    <string name="add_toolbar">Add Car</string>
+</resources>

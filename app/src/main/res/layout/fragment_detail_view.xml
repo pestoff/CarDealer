@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/toolbar_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/fragment_detail_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/mainLabel"
+                style="@style/header"
+                android:text="@string/mainLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productionYearLabel"
+                style="@style/points"
+                android:layout_marginTop="16dp"
+                android:text="@string/productionYear"
+                app:layout_constraintStart_toStartOf="@+id/mainLabel"
+                app:layout_constraintTop_toBottomOf="@+id/mainLabel" />
+
+            <TextView
+                android:id="@+id/mileageLabel"
+                style="@style/points"
+                android:text="@string/mileage"
+                app:layout_constraintStart_toStartOf="@+id/productionYearLabel"
+                app:layout_constraintTop_toBottomOf="@+id/productionYearLabel" />
+
+            <TextView
+                android:id="@+id/colorLabel"
+                style="@style/points"
+                android:text="@string/color"
+                app:layout_constraintStart_toStartOf="@+id/productionYearLabel"
+                app:layout_constraintTop_toBottomOf="@+id/mileageLabel" />
+
+            <TextView
+                android:id="@+id/bodyLabel"
+                style="@style/points"
+                android:text="@string/body"
+                app:layout_constraintStart_toStartOf="@+id/productionYearLabel"
+                app:layout_constraintTop_toBottomOf="@+id/colorLabel" />
+
+            <TextView
+                android:id="@+id/ownersLabel"
+                style="@style/points"
+                android:text="@string/owners"
+                app:layout_constraintStart_toStartOf="@+id/productionYearLabel"
+                app:layout_constraintTop_toBottomOf="@+id/bodyLabel" />
+
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="200dp" />
+
+            <TextView
+                android:id="@+id/productionYearValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/productionYearLabel" />
+
+            <TextView
+                android:id="@+id/transmissionValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/transmissionLabel" />
+
+            <TextView
+                android:id="@+id/engineValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/engineLabel" />
+
+            <TextView
+                android:id="@+id/driveValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/driveLabel" />
+
+            <TextView
+                android:id="@+id/steeringWheelValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/steeringWheelLabel" />
+
+            <TextView
+                android:id="@+id/passportValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/passportLabel" />
+
+            <TextView
+                android:id="@+id/ownershipTimeValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/ownershipTimeLabel" />
+
+            <TextView
+                android:id="@+id/customsValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/customsLabel" />
+
+            <TextView
+                android:id="@+id/vehicleNumberValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/vehicleNumberLabel" />
+
+            <TextView
+                android:id="@+id/vinNumberValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/vinNumberLabel" />
+
+            <TextView
+                android:id="@+id/mileageValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/mileageLabel" />
+
+            <TextView
+                android:id="@+id/colorValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/colorLabel" />
+
+            <TextView
+                android:id="@+id/bodyValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/bodyLabel" />
+
+            <TextView
+                android:id="@+id/ownersValue"
+                style="@style/values"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/ownersLabel" />
+
+            <TextView
+                android:id="@+id/mechanicalLabel"
+                style="@style/header"
+                android:text="@string/mechanical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ownersLabel" />
+
+            <TextView
+                android:id="@+id/transmissionLabel"
+                style="@style/points"
+                android:layout_marginTop="16dp"
+                android:text="@string/transmission"
+                app:layout_constraintStart_toStartOf="@+id/mechanicalLabel"
+                app:layout_constraintTop_toBottomOf="@+id/mechanicalLabel" />
+
+            <TextView
+                android:id="@+id/engineLabel"
+                style="@style/points"
+                android:text="@string/engine"
+                app:layout_constraintStart_toStartOf="@+id/transmissionLabel"
+                app:layout_constraintTop_toBottomOf="@+id/transmissionLabel" />
+
+            <TextView
+                android:id="@+id/driveLabel"
+                style="@style/points"
+                android:text="@string/drive"
+                app:layout_constraintStart_toStartOf="@+id/engineLabel"
+                app:layout_constraintTop_toBottomOf="@+id/engineLabel" />
+
+            <TextView
+                android:id="@+id/steeringWheelLabel"
+                style="@style/points"
+                android:text="@string/steeringWheel"
+                app:layout_constraintStart_toStartOf="@+id/driveLabel"
+                app:layout_constraintTop_toBottomOf="@+id/driveLabel" />
+
+            <TextView
+                android:id="@+id/documentsLabel"
+                style="@style/header"
+                android:text="@string/documents"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/steeringWheelLabel" />
+
+            <TextView
+                android:id="@+id/passportLabel"
+                style="@style/points"
+                android:layout_marginTop="16dp"
+                android:text="@string/passport"
+                app:layout_constraintStart_toStartOf="@+id/documentsLabel"
+                app:layout_constraintTop_toBottomOf="@+id/documentsLabel" />
+
+            <TextView
+                android:id="@+id/ownershipTimeLabel"
+                style="@style/points"
+                android:text="@string/ownershipTime"
+                app:layout_constraintStart_toStartOf="@+id/passportLabel"
+                app:layout_constraintTop_toBottomOf="@+id/passportLabel" />
+
+            <TextView
+                android:id="@+id/customsLabel"
+                style="@style/points"
+                android:text="@string/customs"
+                app:layout_constraintStart_toStartOf="@+id/ownershipTimeLabel"
+                app:layout_constraintTop_toBottomOf="@+id/ownershipTimeLabel" />
+
+            <TextView
+                android:id="@+id/vehicleNumberLabel"
+                style="@style/points"
+                android:text="@string/vehicleNumber"
+                app:layout_constraintStart_toStartOf="@+id/customsLabel"
+                app:layout_constraintTop_toBottomOf="@+id/customsLabel" />
+
+            <TextView
+                android:id="@+id/vinNumberLabel"
+                style="@style/points"
+                android:text="@string/vin"
+                app:layout_constraintStart_toStartOf="@+id/vehicleNumberLabel"
+                app:layout_constraintTop_toBottomOf="@+id/vehicleNumberLabel" />
+
+            <TextView
+                android:id="@+id/descriptionLabel"
+                style="@style/header"
+                android:text="@string/description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vinNumberValue" />
+
+            <TextView
+                android:id="@+id/descriptionValue"
+                style="@style/points"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                tools:text="@string/large_text"
+                app:layout_constraintStart_toStartOf="@+id/descriptionLabel"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="#e6d690"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_phone_foreground"
+        app:maxImageSize="40dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
